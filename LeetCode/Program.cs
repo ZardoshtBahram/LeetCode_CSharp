@@ -8,12 +8,9 @@ namespace LeetCode
         static void Main(string[] args)
         {
             Stopwatch timer = new Stopwatch();
-            _2115_AllPossiableRecipes test = new _2115_AllPossiableRecipes();
+            _3169_CountDays test = new _3169_CountDays();
             timer.Start();
-
-            List<string> rec = new List<string>(test.FindAllRecipes(["bread"], [["yeast", "flour"]], ["yeast", "flour", "corn"]));
-
-
+            List<string> rec = new List<string>(test.CountDays(90, [[5, 7], [1, 3], [9, 10]]));
 
             timer.Stop();
             Console.WriteLine(timer.ElapsedMilliseconds);
