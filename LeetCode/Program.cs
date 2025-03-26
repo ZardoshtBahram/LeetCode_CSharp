@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics;
+using System.Numerics;
+using System.Runtime.CompilerServices;
 
 namespace LeetCode
 {
@@ -8,12 +10,14 @@ namespace LeetCode
         static void Main(string[] args)
         {
             Stopwatch timer = new Stopwatch();
-            _3169_CountDays test = new _3169_CountDays();
+            _2033_MinOperationToMakeUni test = new _2033_MinOperationToMakeUni();
             timer.Start();
-            List<string> rec = new List<string>(test.CountDays(90, [[5, 7], [1, 3], [9, 10]]));
+            Console.WriteLine(test.MinOperations([[2, 4], [6, 8]], 2)); 
 
             timer.Stop();
             Console.WriteLine(timer.ElapsedMilliseconds);
         }
+
     }
+
 }
