@@ -10,9 +10,11 @@ namespace LeetCode
         static void Main(string[] args)
         {
             Stopwatch timer = new Stopwatch();
-            _2033_MinOperationToMakeUni test = new _2033_MinOperationToMakeUni();
+            _763_PartitionLabels test = new _763_PartitionLabels();
             timer.Start();
-            Console.WriteLine(test.MinOperations([[2, 4], [6, 8]], 2)); 
+
+            Console.WriteLine(string.Join( "," , test.PartitionLabels("ababcbacadefegdehijhklij")));
+            
 
             timer.Stop();
             Console.WriteLine(timer.ElapsedMilliseconds);
