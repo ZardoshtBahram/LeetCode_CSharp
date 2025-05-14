@@ -10,11 +10,17 @@ namespace LeetCode
         static void Main(string[] args)
         {
             Stopwatch timer = new Stopwatch();
-            _763_PartitionLabels test = new _763_PartitionLabels();
+            _2_addTwoNums test = new _2_addTwoNums();
+            ListNode a = new ListNode(3);
+            ListNode b = new ListNode(4 , a);
+            ListNode c = new ListNode(2 , b);
+
+            ListNode d = new ListNode(4);
+            ListNode e = new ListNode(6 , d);
+            ListNode f = new ListNode(5 , e);
             timer.Start();
 
-            Console.WriteLine(string.Join( "," , test.PartitionLabels("ababcbacadefegdehijhklij")));
-            
+            test.AddTwoNumbers(c, f);
 
             timer.Stop();
             Console.WriteLine(timer.ElapsedMilliseconds);
